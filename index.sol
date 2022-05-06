@@ -25,4 +25,9 @@ contract ZombieFactory {
        */
         zombies.push(Zombie(_name, _dna));
     }
+
+    // underscore(_) go before the name as a convention for private vars/functions and functions paramters
+    function _createZombie(string memory _name, uint256 _dna) private {
+        zombies.push(Zombie(_name, _dna));
+    }
 }
