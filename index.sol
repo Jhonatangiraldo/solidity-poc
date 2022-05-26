@@ -64,6 +64,10 @@ contract ZombieFactory {
         returns (uint256)
     {}
 
+    /**
+        It is very similar to API (Application Program Interface), a human-readable representation of a code’s interface.
+        ABI defines the methods and structures used to interact with the binary contract, just like API does but on a lower-level
+    */
     // we can type cast using functions similar to parse, like Number(string) then uint256(otherType)
     uint256 rand = uint256(keccak256(abi.encodePacked(_str)));
 }
