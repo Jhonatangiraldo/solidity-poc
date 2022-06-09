@@ -1,5 +1,7 @@
 pragma solidity >=0.5.0 <0.6.0;
 
+// uint is an alias for uint256
+
 contract ZombieFactory {
     uint256 dnaDigits = 16;
     // this is exponential operator uint x = 5 ** 2; -> equal to 5^2 = 25
